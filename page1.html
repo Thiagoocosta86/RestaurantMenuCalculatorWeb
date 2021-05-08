@@ -8,7 +8,22 @@
     <link rel='stylesheet' href='style.css' type='text/css' >
     <script src="js/script.js" defer></script>
 </head>
-<body>
+<body onload= 'document.form1.text1()'>
+    <div class="pass">
+        <h2>Restaurant Staff</h2>
+        <p>Please! Input a password and submit to check your password</p>
+        <form name= "form1" action="#">
+            <ul>
+                <li><input type= 'text' name= 'text1'/></li>
+                <li class="messag1" > Password Validator</li>
+                <li>&nbsp;</li>
+                <li><input type="submit" name="submit" value="Submit" onclick="CheckPassword (document.form1.text1)"/></li>
+                <li>&nbsp;</li>
+
+
+            </ul>
+        </form>
+    </div>
     
 </body>
 </html>
