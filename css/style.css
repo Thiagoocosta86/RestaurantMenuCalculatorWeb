@@ -1,0 +1,30 @@
+li {list-style: none;
+    font-size: 16pt;
+}
+.pass {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    background: silver;
+    border: 1PX solid silver;
+}
+
+.pass h2 {
+    margin-left: 38px;
+}
+.pass h3 {
+    margin-left: 38px;
+}
+input:focus, textarea:focus{
+    background-color: brown;
+}
+input submit {
+    font-size: 12pt;
+}
+.messag1 {
+    color: #FF0000;
+    font-size: 10pt;
+}
+
+
