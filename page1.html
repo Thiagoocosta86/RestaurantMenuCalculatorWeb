@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Page1</title>
-    <link rel="stylesheet" href= "css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script src="js/script.js" defer></script>
 </head>
-<body onload= 'document.form1.text1.focus()'>
+
+<body onload='document.form1.text1.focus()'>
     <div class="pass">
         <h2>Restaurant Staff</h2>
         <p>Please! Input a password and submit to check your password</p>
-        <form name= "form1" action="#">
+        <form name="form1" action="#">
             <ul>
-                <li><input type= 'text' name= 'text1'/></li>
-                <li class="messag1" > Password Validator</li>
+                <li><input type='text' name='text1' /></li>
+                <li class="messag1"> Password Validator</li>
                 <li>&nbsp;</li>
-                <li><input type="submit" name="submit" value="Submit" onclick="CheckPassword (document.form1.text1)"/></li>
+                <li><input type="submit" name="submit" value="Submit" onclick="CheckPassword (document.form1.text1)" />
+                </li>
                 <li>&nbsp;</li>
             </ul>
         </form>
     </div>
-    <div class="restCustomers">
-        <!--Creating a button for Random Users-->
-        <button class="btn btn-primary" id="getRandomUser">Customers</button>
-        <div id="output"></div>
-        
-               
+    <div class="container">
+        <div class="restCustomers">
+            <!--Creating a button for Random Users-->
+            <button class="btn btn-primary" id="getRandomUser">Customers</button>
+            <div id="output"></div>
+
+
         </div>
-    
+    </div>
+
 </body>
+
 </html>

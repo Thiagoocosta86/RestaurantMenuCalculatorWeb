@@ -32,9 +32,10 @@ function getRandomUser(){
                                 
                     <ul>
                     <li>${user.name.first} ${user.name.last}</i>
+                    <li>Age: ${user.dob.age} Gender: ${user.gender}</li>
                     <li>Email: ${user.email}</li>
                     <li>City: ${user.location.city}</li>
-                    <li>Age: ${user.dob.age}</li>
+                    
                                
                 </div>
                 
