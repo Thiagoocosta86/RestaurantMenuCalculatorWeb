@@ -24,27 +24,19 @@ function getRandomUser(){
             console.log(data);
             isso.forEach(function (user){
                 output +=`
-                <div>
-                                <style>
-                                    img {
-                                     border: 1px solid #ddd; /* Gray border */
-                                     border-radius: 4px;  /* Rounded border */
-                                     padding: 5px; /* Some padding */
-                                     width: 150px; /* Set a small width */
-                                    }
-
-                                    /* Add a hover effect (blue shadow) */
-                                    img:hover {
-                                     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-                                    }
-                                    </style>
-                                <a target="_blank" href="${user.picture.thumbnail}">
-                                <img src="${user.picture.thumbnail}" alt="User">
-                                </a>
+                <div class="customer">
                                 
-                                <h3>${user.name.first} ${user.name.last}</h3>
+                    <a target="_blank" href="${user.picture.thumbnail}">
+                    <img src="${user.picture.thumbnail}" alt="User">
+                    </a>
+                                
+                    <ul>
+                    <li>${user.name.first} ${user.name.last}</i>
+                    <li>Email: ${user.email}</li>
+                    <li>City: ${user.location.city}</li>
+                    <li>Age: ${user.dob.age}</li>
                                
-                            </div>
+                </div>
                 
                 `;
                 
