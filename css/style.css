@@ -63,6 +63,13 @@ th, td {
 table {
     width: 400px;
 }
+.restCustomers {
+    float: right;
+}
+
+
+
+
 *{
     font-family: Arial;
 }
