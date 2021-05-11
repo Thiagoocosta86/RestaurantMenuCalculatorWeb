@@ -21,7 +21,8 @@ function getRandomUser(){
         .then((data)=>{
             let isso = data.results;
             let output = '<h2>Restaurant Customers</h2>'
-            isso.foreach(function (user){
+            console.log(data);
+            isso.forEach(function (user){
                 output +=`
                 <div>
                                 <style>
