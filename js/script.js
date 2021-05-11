@@ -30,8 +30,8 @@ function getRandomUser(){
                     <img src="${user.picture.thumbnail}" alt="User">
                     </a>
                                 
-                    <ul>
-                    <li>${user.name.first} ${user.name.last}</i>
+                 <ul>
+                <li>${user.name.first} ${user.name.last}</i>
                     <li>Age: ${user.dob.age} Gender: ${user.gender}</li>
                     <li>Email: ${user.email}</li>
                     <li>City: ${user.location.city}</li>
