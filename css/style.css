@@ -53,6 +53,17 @@ ul li{
     font-size: small;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 5px;
+    height: 50px;
+}
+table {
+    width: 400px;
+}
 *{
     font-family: Arial;
 }
+
