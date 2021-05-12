@@ -52,13 +52,15 @@ img:hover {
 .customer {
   width: 300px;
   border: 15px solid rgb(14, 97, 165);
-  padding: 50px;
+  padding: 5px;
   margin: 20px;
   text-align:center;
+  border-radius: 25px;
 }
 ul li{
     font-size: medium;
     text-align:justify;
+    padding: 0 auto;
     
 }
 
