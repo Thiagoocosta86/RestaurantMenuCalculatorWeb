@@ -43,3 +43,20 @@ function getRandomUser() {
             document.getElementById('output').innerHTML = output;
         })
 }
+
+var total_items = 12;
+
+function CalculateItemsValue(){
+    var total = 0;
+
+    for (let i = 1; i <= total_items; i++) {
+       itemID =document.getElementById("qnt_" + i);
+       total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
+        
+    }
+    document.getElementById('ItemsTotal').innerHTML = "€" + total;
+}
+
+document.querySelectorAll('[id^="qnt_"]').forEach(item => {
+    item.addEventListener('keyup', CalculateItemsValue);
+});

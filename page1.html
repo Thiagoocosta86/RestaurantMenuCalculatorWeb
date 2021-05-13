@@ -13,6 +13,17 @@
 </head>
 
 <body onload='document.form1.text1.focus()'>
+       <!-- NavBar -->
+       <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link disabled" href="page1.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a style=color:cadetblue class="nav-link" href="page2.html">Page2</a>
+            </li>
+        </ul>
+    </nav>
     <div class="pass">
         <h2>Restaurant Staff</h2>
         <p>Please! Input a password and submit to check your password</p>
@@ -34,7 +45,7 @@
         <div class="restCustomers">
             <!--Creating a button for Random Users-->
             <div>
-            <button class="btn btn-primary" id="getRandomUser">Customers</button>
+            <button class="btn btn-info" id="getRandomUser">Customers</button>
             </div>
             <div id="output"></div>
 
@@ -140,10 +151,12 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <th>TOTAL</th>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>€</td>
+                <td class="total right"><strong>Total:</strong></td>
+                <td class="total"><strong>
+                    <div id="ItemsTotal">€0</div>
+                </strong></td>
                 <td>Submit</td>
             </tr>
         </table>
