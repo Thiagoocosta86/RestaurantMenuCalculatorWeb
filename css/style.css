@@ -11,14 +11,17 @@ li {list-style: none;
     font-size: 16pt;
 }
 .pass {
-    margin: auto;
+    margin-left: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 400px;
     background: silver;
     border: 1PX solid silver;
-    float:left;
+    
+  
 }
+
+
 p {
     text-align: center;
 }
@@ -71,7 +74,7 @@ ul li{
 
 table, th, td {
     border: 2px double black;
-    
+        
 }
 th, td {
     padding: 5px;
@@ -79,14 +82,19 @@ th, td {
 }
 table {
     width: 400px;
+  
 }
 .restCustomers {
-    float: right;
+    float: left;
     position:relative;
 }
 
-
-
+.btn{
+    margin-left: 100px;
+}
+h2{
+    margin-left: 20px;
+}
 *{
     font-family: Arial;
 }
