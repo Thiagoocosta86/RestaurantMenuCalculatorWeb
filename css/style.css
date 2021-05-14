@@ -17,6 +17,7 @@ li {list-style: none;
     width: 400px;
     background: silver;
     border: 1PX solid silver;
+    float:left;
 }
 p {
     text-align: center;
@@ -70,6 +71,7 @@ ul li{
 
 table, th, td {
     border: 2px double black;
+    
 }
 th, td {
     padding: 5px;
@@ -80,6 +82,7 @@ table {
 }
 .restCustomers {
     float: right;
+    position:relative;
 }
 
 
