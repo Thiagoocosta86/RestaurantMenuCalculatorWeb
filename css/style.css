@@ -97,6 +97,7 @@ h2{
 }
 footer {
 margin-top: 15cm;
+bottom:0;
 }
 *{
     font-family: Arial;
