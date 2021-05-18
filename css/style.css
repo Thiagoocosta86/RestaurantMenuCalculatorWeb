@@ -21,12 +21,17 @@ li {list-style: none;
   
 }
 
-
+label{
+    color: red;
+    text-align: justify;
+    margin-right: 38px;
+    
+}
 p {
     text-align: center;
 }
 .pass h2 {
-    margin-left: 38px;
+    
     text-align: center;
 
 }
@@ -34,13 +39,13 @@ p {
     margin-left: 38px;
 }
 input:focus, textarea:focus{
-    background-color: brown;
+    background-color: coral;
 }
 input submit {
     font-size: 12pt;
 }
 .messag1 {
-    color: #FF0000;
+    color: coral;
     font-size: 10pt;
 }
 
