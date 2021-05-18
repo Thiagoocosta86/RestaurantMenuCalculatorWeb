@@ -46,6 +46,7 @@ function getRandomUser() {
         })
 }
 
+
 var total_items = 12;
 
 function CalculateItemsValue(){
@@ -61,4 +62,17 @@ function CalculateItemsValue(){
 
 document.querySelectorAll('[id^="qnt_"]').forEach(item => {
     item.addEventListener('keyup', CalculateItemsValue);
+});
+
+
+var qtd = 0;
+    
+            
+    
+btn3.addEventListener('click', function add(){
+    
+
+    qtd++;
+    document.getElementById('qnt_1').innerHTML = qtd;
+    
 });
