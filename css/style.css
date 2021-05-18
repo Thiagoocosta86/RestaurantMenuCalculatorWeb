@@ -78,7 +78,7 @@ ul li{
 }
 
 table, th, td {
-    border: 2px double black;
+    border:  double black;
         
 }
 th, td {
@@ -89,10 +89,7 @@ table {
     width: 400px;
   
 }
-.tble{
-    border: none;
-    border-left: none;
-}
+
 .restCustomers {
     float: left;
     position:relative;
