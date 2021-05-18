@@ -89,9 +89,20 @@ table {
     width: 400px;
   
 }
+.tble{
+    border: none;
+    border-left: none;
+}
 .restCustomers {
     float: left;
     position:relative;
+}
+
+.submitmenu{
+    
+    float: right;
+    background-color: coral;
+    color:white;
 }
 
 .btn{
