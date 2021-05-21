@@ -47,6 +47,127 @@ function getRandomUser() {
 }
 
 
+
+
+var total_items = 3;
+
+function CalculateStarters(){
+    let total = 0;
+
+    for (let i = 1; i <= 3; i++) {
+       itemID =document.getElementById("qnt_" + i);
+       total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")));
+        
+    }
+    document.getElementById('StartersTotal').innerHTML = "€" + total.toFixed(2);
+}
+
+document.querySelectorAll('[id^="qnt_1"], [id^="qnt_2"], [id^="qnt_3"]  ').forEach(item => {
+    item.addEventListener('keyup', CalculateStarters);
+});
+
+
+    
+
+
+function CalculateMain(){
+    let total = 0;
+
+    for (let i = 4; i <= 6; i++) {
+       itemID =document.getElementById("qnt_" + i);
+       total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")));
+        
+    }
+    document.getElementById('MainTotal').innerHTML = "€" + total.toFixed(2);
+}
+
+document.querySelectorAll('[id^="qnt_4"], [id^="qnt_5"], [id^="qnt_6"]  ').forEach(item => {
+    item.addEventListener('keyup', CalculateMain);
+});
+
+    
+
+
+function CalculateDessert(){
+    let total = 0;
+
+    for (let i = 7; i <= 9; i++) {
+       itemID =document.getElementById("qnt_" + i);
+       total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")));
+        
+    }
+    document.getElementById('DessertTotal').innerHTML = "€" + total.toFixed(2);
+}
+
+document.querySelectorAll('[id^="qnt_7"], [id^="qnt_8"], [id^="qnt_9"]  ').forEach(item => {
+    item.addEventListener('keyup', CalculateDessert);
+});
+
+
+
+function CalculateDrink(){
+    let total = 0;
+
+    for (let i = 10; i <= 12; i++) {
+       itemID =document.getElementById("qnt_" + i);
+       total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")));
+        
+    }
+    document.getElementById('DrinkTotal').innerHTML = "€" + total.toFixed(2);
+}
+
+document.querySelectorAll('[id^="qnt_10"], [id^="qnt_11"], [id^="qnt_12"]  ').forEach(item => {
+    item.addEventListener('keyup', CalculateDrink);
+});
+
+
+function CalculateDrink(){
+    let total = 0;
+
+    for (let i = 10; i <= 12; i++) {
+       itemID =document.getElementById("qnt_" + i);
+       total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")));
+        
+    }
+    document.getElementById('DrinkTotal').innerHTML = "€" + total.toFixed(2);
+}
+
+document.querySelectorAll('[id^="qnt_10"], [id^="qnt_11"], [id^="qnt_12"]  ').forEach(item => {
+    item.addEventListener('keyup', CalculateDrink);
+});
+
+
+
+function CalculateNonVegetarian(){
+    let total = 0;
+
+    for (let i = 1; i <= 5; i++) {
+       itemID =document.getElementById("qnt_" + i);
+       total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")));
+        
+    }
+    document.getElementById('NonVegetarianTotal').innerHTML = "€" + total.toFixed(2);
+}
+
+document.querySelectorAll('[id^="qnt_1"], [id^="qnt_2"], [id^="qnt_4"], [id^="qnt_5"]  ').forEach(item => {
+    item.addEventListener('keyup', CalculateNonVegetarian);
+});
+
+function CalculateVegetarian(){
+    let total = 0;
+
+    for (let i = 3; i <= 6; i++) {
+       itemID =document.getElementById("qnt_" + i);
+       total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")));
+        
+    }
+    document.getElementById('VegetarianTotal').innerHTML = "€" + total.toFixed(2);
+}
+
+document.querySelectorAll('[id^="qnt_3"], [id^="qnt_6"]').forEach(item => {
+    item.addEventListener('keyup', CalculateVegetarian);
+});
+
 var total_items = 12;
 
 function CalculateItemsValue(){
@@ -57,22 +178,9 @@ function CalculateItemsValue(){
        total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
         
     }
-    document.getElementById('ItemsTotal').innerHTML = "€" + total;
+    document.getElementById('ItemsTotal').innerHTML = "€" + total.toFixed(2);
 }
 
 document.querySelectorAll('[id^="qnt_"]').forEach(item => {
     item.addEventListener('keyup', CalculateItemsValue);
-});
-
-
-var qtd = 0;
-    
-            
-    
-btn3.addEventListener('click', function add(){
-    
-
-    qtd++;
-    document.getElementById('qnt_1').innerHTML = qtd;
-    
 });
