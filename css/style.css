@@ -107,10 +107,14 @@ table {
 h2{
     margin-left: 20px;
 }
-footer {
+#footer1 {
 margin-top: 10cm;
 bottom:0;
 }
+#footer2 {
+    margin-top: 5cm;
+    bottom:0;
+    }
 *{
     font-family: Arial;
 }
