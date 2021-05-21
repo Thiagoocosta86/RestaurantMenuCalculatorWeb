@@ -23,10 +23,3 @@ var app3 = new Vue({
     }
 });
 
-$(document).ready(function(){
-    $('#fade').click(function(){
-      $("#app-1").fadeIn();
-      $("#app-2").fadeIn("slow");
-      $("#app-3").fadeIn(3000);
-    })
-  })
