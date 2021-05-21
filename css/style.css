@@ -77,7 +77,7 @@ ul li{
 }
 
 table, th, td {
-    border:  double black;
+    border:  ridge;
         
 }
 th, td {
